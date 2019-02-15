@@ -49,5 +49,5 @@ for i in range(len(all_text)):
 words = [' '.join(jieba.cut(d)) for d in text_re]
 
 df = pd.DataFrame(text_re)
-df.to_excel('food_deal.xlsx',encoding='UTF-8')
+df.to_excel('food.xlsx',encoding='UTF-8')
 
