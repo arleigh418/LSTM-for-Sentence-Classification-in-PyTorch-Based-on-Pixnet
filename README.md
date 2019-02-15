@@ -17,8 +17,8 @@ travel_taiwan.json （國內旅遊）
 
 3.Run LSTM_sentence_classifier.py or LSTM_sentence_classifier_cuda.py(whethere you need cuda or not)
 
-4.Class_number show how is the data classified.
+4.Class_number show how is the data classified,and I merge travel_foreign & travel_taiwan to travel.
 
 5.For other pixnet article for test,this model has a correct rate of 77-85%,and articles from others,it still has good results.
 
-6.
+6.This model is for article classification,it is not doing well in too small sentence classification.
