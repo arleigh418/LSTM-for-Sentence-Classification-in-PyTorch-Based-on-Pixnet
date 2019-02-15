@@ -15,7 +15,7 @@ sport.json （運動體育）
 travel_foreign.json （國外旅遊）
 travel_taiwan.json （國內旅遊）
 
-3.Run LSTM_sentence_classifier.py or LSTM_sentence_classifier_cuda.py(whethere you need cuda or not)
+3.Run LSTM_sentence_classifier.py or LSTM_sentence_classifier_cuda.py to train the model(whethere you need cuda or not)
 
 4.Class_number show how is the data classified,and I merge travel_foreign & travel_taiwan to travel.
 
