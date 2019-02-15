@@ -1,5 +1,7 @@
 
 "# LSTM-for-Sentence-Classification-in-PyTorch-Based-on-Pixnet" 
+
+
 1.You need to download data from https://github.com/pixnet/2017-pixnet-hackathon-TaskOrientedBot/blob/master/opendata.md
 
 2.This model use :
@@ -13,4 +15,10 @@ sport.json （運動體育）
 travel_foreign.json （國外旅遊）
 travel_taiwan.json （國內旅遊）
 
-3.Class_number 
+3.Run LSTM_sentence_classifier.py or LSTM_sentence_classifier_cuda.py(whethere you need cuda or not)
+
+4.Class_number show how is the data classified.
+
+5.For other pixnet article for test,this model has a correct rate of 77-85%,and articles from others,it still has good results.
+
+6.
