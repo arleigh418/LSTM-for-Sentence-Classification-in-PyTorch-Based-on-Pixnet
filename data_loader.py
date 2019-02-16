@@ -22,7 +22,7 @@ jieba.load_userdict('new_words.txt')
 def prepare_sequence(seq, to_ix, cuda=False):
     seq = str(seq)
     var = autograd.Variable(torch.LongTensor([to_ix[w] for w in seq.split(' ')]))
-    return seq
+    return var
 
 
 def prepare_predict_sequence(seq, to_ix, cuda=False):
