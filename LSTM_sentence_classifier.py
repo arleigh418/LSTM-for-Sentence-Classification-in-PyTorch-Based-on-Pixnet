@@ -26,6 +26,7 @@ class LSTMClassifier(nn.Module):
         self.word_embeddings = nn.Embedding(vocab_size, embedding_dim)
         self.lstm = nn.LSTM(embedding_dim, hidden_dim)
         self.hidden2label = nn.Linear(hidden_dim,8)
+#         self.drop = nn.Dropout(p=0.5)
         self.hidden = self.init_hidden()
 
     def init_hidden(self):
@@ -40,6 +41,7 @@ class LSTMClassifier(nn.Module):
         x = embeds.view(len(sentence), 1, -1)
         lstm_out, self.hidden = self.lstm(x, self.hidden)
         y  = self.hidden2label(lstm_out[-1])
+#         y_d = self.drop(y)
         log_probs = F.log_softmax(y)
         return log_probs
 
