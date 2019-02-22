@@ -14,7 +14,7 @@ import pandas as pd
 predict_data,word_to_ix = data_loader.predict_data("test2.xlsx") 
 
 model = LSTMClassifier(400, 400, len(word_to_ix),8)
-model.load_state_dict(torch.load('best_model_acc7867.model',map_location='cpu'))
+model.load_state_dict(torch.load('best_model_acc7867.model',map_location='cpu')) #map_location='cpu': whether you use gpu or not
 
 
 
