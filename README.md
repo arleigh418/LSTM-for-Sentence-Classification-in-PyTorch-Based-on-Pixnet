@@ -19,6 +19,6 @@ travel_taiwan.json （國內旅遊）
 
 4.Class_number show how is the data classified,and I merge travel_foreign & travel_taiwan to travel. 
 
-5.Use other pixnet article test,this model has a correct rate of 80-85%,but in other forums like PTT, the accuracy will be lower.
+5.Use other pixnet article test,this model has a correct rate of 75-82%,but in other forums like PTT, the accuracy will be lower.
 
 6.This model is for article classification,it is not doing well in too small sentence classification.
