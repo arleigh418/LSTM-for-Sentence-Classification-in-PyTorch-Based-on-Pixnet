@@ -4,7 +4,7 @@
 
 1.You need to download data from https://github.com/pixnet/2017-pixnet-hackathon-TaskOrientedBot/blob/master/opendata.md
 
-2.This method base on : https://github.com/yuchenlin/lstm_sentence_classifier
+2.This method based on : https://github.com/yuchenlin/lstm_sentence_classifier
 
 3.This model use :
 constellation.json （星座運勢）
