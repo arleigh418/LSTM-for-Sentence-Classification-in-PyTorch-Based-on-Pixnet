@@ -80,7 +80,7 @@ def train():
             best_dev_acc = dev_acc
 #             os.system('rm mr_best_model_acc_*.model')
             print('New Best Dev!!!')
-            
+            torch.save(model.state_dict(), 'best_models' + str(int(test_acc*10000)) + '.model')
             no_up = 0
         else:
             no_up += 1
@@ -126,7 +126,7 @@ def train_epoch(model, train_data, loss_function, optimizer, word_to_ix, label_t
 
 
         truth_res.append(label_to_ix[label])
-        # detaching it from its history on the last instance.
+      
         model.hidden = model.init_hidden()
         sent = data_loader.prepare_sequence(sent, word_to_ix).cuda()
         label = data_loader.prepare_label(label, label_to_ix).cuda()
