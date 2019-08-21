@@ -80,13 +80,13 @@ def train():
             best_dev_acc = dev_acc
 #             os.system('rm mr_best_model_acc_*.model')
             print('New Best Dev!!!')
-            torch.save(model.state_dict(), 'best_model_acc' + str(int(test_acc*10000)) + '.model')
+            
             no_up = 0
         else:
             no_up += 1
             if no_up >= 10:
                 exit()
-#     torch.save(model, 'index_asia_all.pkl')
+    torch.save(model, 'index_asia_all.pkl')
     
 def evaluate(model, data, loss_function, word_to_ix, label_to_ix, name ='dev'):
     model.eval()
