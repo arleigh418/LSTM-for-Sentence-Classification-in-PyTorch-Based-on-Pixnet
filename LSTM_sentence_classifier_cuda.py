@@ -86,7 +86,7 @@ def train():
             no_up += 1
             if no_up >= 10:
                 exit()
-    torch.save(model, 'index_asia_all.pkl')
+    
     
 def evaluate(model, data, loss_function, word_to_ix, label_to_ix, name ='dev'):
     model.eval()
